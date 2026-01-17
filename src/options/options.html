@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Form Filler - Settings</title>
+  <link rel="stylesheet" href="../../assets/styles/shared.css">
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="options-container">
+    <!-- Header -->
+    <header class="options-header">
+      <div class="header-inner">
+        <div class="header-content">
+          <div class="logo">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+              <path d="M7 9h10M7 13h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="17" cy="15" r="2" fill="currentColor"/>
+            </svg>
+          </div>
+          <div class="header-text">
+            <h1>Smart Form Filler</h1>
+            <p class="subtitle">Configure your auto-fill preferences</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="options-main">
+      <div class="main-inner">
+        <!-- Save Status Toast -->
+        <div id="saveToast" class="save-toast hidden">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 6L9 17l-5-5"/>
+          </svg>
+          <span>Settings saved</span>
+        </div>
+
+        <!-- Field Types Section -->
+        <section class="settings-section">
+          <div class="section-header">
+            <h2>Field Types</h2>
+            <p>Choose which field types to auto-fill</p>
+          </div>
+
+          <div class="settings-card">
+            <!-- Personal Information -->
+            <div class="settings-group">
+              <h3 class="group-title">Personal Information</h3>
+              
+              <div class="toggle-wrapper">
+                <span class="toggle-label">First Name</span>
+                <label class="toggle">
+                  <input type="checkbox" data-field="firstName" checked>
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+
+              <div class="toggle-wrapper">
+                <span class="toggle-label">Last Name</span>
+                <label class="toggle">
+                  <input type="checkbox" data-field="lastName" checked>
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+
+              <div class="toggle-wrapper">
+                <span class="toggle-label">Full Name</span>
+                <label class="toggle">
+                  <input type="checkbox" data-field="fullName" checked>
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+
+              <div class="toggle-wrapper">
+                <span class="toggle-label">Username</span>
+                <label class="toggle">
+                  <input type="checkbox" data-field="username" checked>
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+            </div>
+
+            <div class="group-divider"></div>
+
+            <!-- Contact Information -->
+            <div class="settings-group">
+              <h3 class="group-title">Contact Information</h3>
+              
+              <div class="toggle-wrapper">
+                <span class="toggle-label">Email Address</span>
+                <label class="toggle">
+                  <input type="checkbox" data-field="email" checked>
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+
+              <div class="toggle-wrapper">
+                <span class="toggle-label">Phone Number</span>
+                <label class="toggle">
+                  <input type="checkbox" data-field="phone" checked>
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+
+              <div class="toggle-wrapper">
+                <span class="toggle-label">Website URL</span>
+                <label class="toggle">
+                  <input type="checkbox" data-field="url" checked>
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+            </div>
+
+            <div class="group-divider"></div>
+
+            <!-- Address -->
+            <div class="settings-group">
+              <h3 class="group-title">Address</h3>
+              
+              <div class="toggle-wrapper">
+                <span class="toggle-label">Street Address</span>
+                <label class="toggle">
+                  <input type="checkbox" data-field="address" checked>
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+
+              <div class="toggle-wrapper">
+                <span class="toggle-label">Address Line 2 (Apt/Suite)</span>
+                <label class="toggle">
+                  <input type="checkbox" data-field="addressLine2" checked>
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+
+              <div class="toggle-wrapper">
+                <span class="toggle-label">City</span>
+                <label class="toggle">
+                  <input type="checkbox" data-field="city" checked>
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+
+              <div class="toggle-wrapper">
+                <span class="toggle-label">State/Province</span>
+                <label class="toggle">
+                  <input type="checkbox" data-field="state" checked>
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+
+              <div class="toggle-wrapper">
+                <span class="toggle-label">ZIP/Postal Code</span>
+                <label class="toggle">
+                  <input type="checkbox" data-field="zip" checked>
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+
+              <div class="toggle-wrapper">
+                <span class="toggle-label">Country</span>
+                <label class="toggle">
+                  <input type="checkbox" data-field="country" checked>
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+            </div>
+
+            <div class="group-divider"></div>
+
+            <!-- Other Fields -->
+            <div class="settings-group">
+              <h3 class="group-title">Other Fields</h3>
+              
+              <div class="toggle-wrapper">
+                <span class="toggle-label">Company Name</span>
+                <label class="toggle">
+                  <input type="checkbox" data-field="company" checked>
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+
+              <div class="toggle-wrapper">
+                <span class="toggle-label">Date Fields</span>
+                <label class="toggle">
+                  <input type="checkbox" data-field="date" checked>
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+
+              <div class="toggle-wrapper">
+                <span class="toggle-label">Number Fields</span>
+                <label class="toggle">
+                  <input type="checkbox" data-field="number" checked>
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+
+              <div class="toggle-wrapper">
+                <span class="toggle-label">Text Areas (Lorem Ipsum)</span>
+                <label class="toggle">
+                  <input type="checkbox" data-field="textarea" checked>
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+
+              <div class="toggle-wrapper">
+                <span class="toggle-label">Password Fields</span>
+                <label class="toggle">
+                  <input type="checkbox" data-field="password" checked>
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Locale Section -->
+        <section class="settings-section">
+          <div class="section-header">
+            <h2>Data Locale</h2>
+            <p>Choose the format and style of generated data</p>
+          </div>
+
+          <div class="settings-card">
+            <div class="settings-group">
+              <div class="select-wrapper">
+                <label for="locale" class="select-label">Region</label>
+                <select id="locale" class="select-input">
+                  <option value="US">United States</option>
+                  <option value="UK" disabled>United Kingdom (Coming Soon)</option>
+                  <option value="CA" disabled>Canada (Coming Soon)</option>
+                  <option value="AU" disabled>Australia (Coming Soon)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Developer Section -->
+        <section class="settings-section">
+          <div class="section-header">
+            <h2>Developer Options</h2>
+            <p>Advanced settings for debugging</p>
+          </div>
+
+          <div class="settings-card">
+            <div class="settings-group">
+              <div class="toggle-wrapper">
+                <div class="toggle-info">
+                  <span class="toggle-label">Debug Mode</span>
+                  <span class="toggle-description">Log form detection and filling actions to console</span>
+                </div>
+                <label class="toggle">
+                  <input type="checkbox" id="debugMode">
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Instructions Section -->
+        <section class="settings-section">
+          <div class="section-header">
+            <h2>How to Use</h2>
+            <p>Quick guide to get started</p>
+          </div>
+
+          <div class="settings-card instructions-card">
+            <ol class="instruction-list">
+              <li>
+                <strong>Navigate to a web page with a form</strong>
+                <span>Any page with input fields will work</span>
+              </li>
+              <li>
+                <strong>Right-click on any form field</strong>
+                <span>The context menu will appear</span>
+              </li>
+              <li>
+                <strong>Select "Fill Form with Test Data"</strong>
+                <span>All detected fields will be filled automatically</span>
+              </li>
+              <li>
+                <strong>Customize your settings above</strong>
+                <span>Disable specific field types as needed</span>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="options-footer">
+          <p>Smart Form Filler v1.0.0 • All data is generated locally</p>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>
