@@ -35,7 +35,7 @@ A Chrome extension that auto-fills web forms with realistic test data via right-
 
 1. **Download or clone this repository**
    ```bash
-   git clone https://github.com/yourusername/smart-form-filler.git
+   git clone https://github.com/Deep-dsd/Chrome-Extension-Smart-Form-Filler.git
    ```
 
 2. **Open Chrome Extensions page**
